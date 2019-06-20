@@ -115,5 +115,3 @@ main = do
          let img = PPMImage width height 255 (DV.fromList (parsedImg))
          writeFile outputFile (stringify (IP.autoThresholding limit img))
          return()
-
-    -- RUN FIND CONTOURS FUNCTION
